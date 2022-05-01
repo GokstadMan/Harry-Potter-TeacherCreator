@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Advent Pro;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+.characters-container {
+  padding: 40px;
+  margin: 40px;
+  max-width: 1500px;
+  text-align: center;
+}
+
+#staff-container {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
+}
+
+.staff-card {
+  width: 280px;
+  height: 430px;
+  text-align: center;
+  list-style-type: none;
+  background: white;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  padding: 80px 20px;
+}
+
+.staff-card > h4 {
+  margin-bottom: 20px;
+}
+
+.staff-card:hover {
+  box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.35);
+  transform: translate3D(0, -2px, 0);
+}
+
+.staff-img {
+  max-height: 200px;
+  max-width: 150px;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+#add-staff-btn {
+  background-color: rgb(107, 230, 134);
+}
+
+h3 {
+  display: none;
+}
+
+.staff-card:hover h3 {
+  display: block;
+}
